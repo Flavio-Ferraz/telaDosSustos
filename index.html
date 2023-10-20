@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela dos Sustos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+        <div class="container">
+            <h1>Tela dos Sustos</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav nav-pills navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#principal">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cinemas">Cinemas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#streaming">Streamings</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="principal" class="container-fluid p-2 bg-dark text-center fixed-height-section"><!--Coloquei esta section a fim de manipular toda a página com mais facilidade, padronizando o background-color, centralização de itens. Coloquei a classe fixed-height-section" para conseguir fazer com que a section ficasse com altura fixa e centralizasse as imagens, de forma a não precisar recortar elas de alguma forma-->
+            <div id="carousel-principal" class="carousel slide" data-bs-ride="carousel"><!--O atributo data-bs-ride permite que o bootstrap entenda se tratar de um carousel-->
+                <div class="carousel-inner"><!--Essa div é o container do carrocel-->
+                    <div class="carousel-item active" data-bs-interval="5000"><!--A classe active indica que este será o primeiro item do carousel, fundamental para ele começar a funcionar-->
+                        <img src="https://i0.wp.com/www.arrobanerd.com.br/wp-content/uploads/2023/04/the-last-voyage-of-the-demeter.jpg?fit=1280%2C720&ssl=1" class="img-fluid"><!--A class="img-fluid" fez com que as imagens ficassem responsivas a dispositivos menores-->
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h5>A Última Viagem de Demeter</h5>
+                            <a href="https://www.adorocinema.com/filmes/filme-146273/">Esqueça o Drácula sofisticado que você já viu</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://sosugary.com/wp-content/uploads/2023/07/saw-x.jpg" class="img-fluid">
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h5>Jogos Mortais 10</h5>
+                            <a href="https://www.adorocinema.com/filmes/filme-291879/">Jigsaw não descansa há 2 décadas</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/10/the-nun-social-featued.jpg" class="img-fluid">
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h5>A Freira 2</h5>
+                            <a href="https://www.adorocinema.com/filmes/filme-273411/">O pesadelo do Vaticano não acabou</a>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-principal" data-bs-slide= "prev"class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span><!--este span, junto com a devida classe, criam o botão para o item prévio do carousel-->
+                </button>
+                <button data-bs-target="#carousel-principal" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="0" class="active"></button><!--Este button é o elemento que indica qual slide está sendo exibido e quantos há. O atributo data-bs-slide-to indica a posição do slide exibido, como se fosse um array. A class active aponta qual é o primeiro item exibido-->
+                    <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dark" id="cinemas">
+            <h2>Nos cinemas</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card bg-secondary text-center">
+                            <div class="card-header"></div>
+                            <img src="https://m.media-amazon.com/images/M/MV5BY2RkZGUzNmUtM2JlYi00ZDVhLWE2NTEtMzZjYWE2YjNmMzIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.adorocinema.com/pesquisar/?q=A+freira+2"> A Freira 2</a></h4>
+                                <p>Após os acontecimentos de A Freira, Irmã Irene deve, mais uma vez, enfrentar a poderosa e macabra entidade demoníaca Valak.</p>
+                                <a href="https://youtu.be/0JZ8WGVSrwM" class="btn btn-outline-danger link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        
+                            <div class="card bg-secondary text-center">
+                                <div class="card-header"></div>
+                                <img src="https://cinepop.com.br/wp-content/uploads/2023/08/exorcista.jpg.webp" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title"> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.adorocinema.com/filmes/filme-289029/"> O Exorcista - O Devoto</a></h4>
+                                    <p>Pela primeira vez desde o filme de 1973, a vencedora do Oscar®, Ellen Burstyn, reprisa seu papel icônico como Chris MacNeil, uma atriz que foi para sempre alterada pelo que aconteceu com sua filha Regan cinco décadas antes.</p>
+                                    <a href="https://youtu.be/VfPUcwOP3So" class="btn btn btn-outline-danger link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Trailer</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        
+                            <div class="card bg-secondary text-center">
+                                <div class="card-header"></div>
+                                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/07/jogos_mortais_x__3ahf7ec07-784x1200.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title"> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.adorocinema.com/filmes/filme-291879/"> Jogos Mortais X</a></h4>
+    
+                                    <p>Armado com um propósito recém-descoberto, o infame assassino em série retorna ao seu trabalho, virando a mesa contra os vigaristas em sua maneira visceral característica por meio de armadilhas tortuosas, perturbadas e engenhosas.</p>
+                                    <a href="#" class="btn btn-outline-danger link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Trailer</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dark" id="streaming">
+            <h2>Nos Streamings</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        
+                            <div class="card bg-secondary text-center">
+                                <div class="card-header"></div>
+                                <img src="https://cdn.hmv.com/r/w-640/hmv/files/bc/bcef7334-5647-4f88-818b-34aa7a81a477.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title"> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.adorocinema.com/filmes/filme-287593/"> Sobrenatural: A porta vermelha</a></h4>
+                                    <p>Dalton acabou de ingressar na faculdade, no entanto, o sonho do jovem logo se torna um pesadelo, e ele logo se dá conta de que ainda está muito longe de conseguir levar uma vida normal. Quando os demônios reprimidos de seu passado voltam repentinamente para assombrar os dois, ele e o pai são obrigados a retornar à macabra dimensão da Porta Vermelha, enfrentando uma série de novas e ainda mais terríveis ameaças e encarando seus medos mais profundos para, só assim, banirem seus demônios de uma vez por todas.</p>
+                                    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.b212e04c-cb7a-4e79-8382-c0cec081fe44?autoplay=0&ref_=atv_cf_strg_wb" class="btn btn-outline-danger link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Assista</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        
+                            <div class="card bg-secondary text-center">
+                                <div class="card-header"></div>
+                                <img src="https://m.media-amazon.com/images/M/MV5BOTljMzRkNDItNjYxYS00ODA4LThiZjYtMjI0MTFjODlmMGJmXkEyXkFqcGdeQXVyNzU0NzQxNTE@._V1_FMjpg_UX1000_.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title"> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.adorocinema.com/filmes/filme-146273/"> Drácula -  A última viagem de Deméter</a></h4>
+                                    <p>Em Drácula - A Última Viagem do Deméter, inspirado na icônica lenda do vampiro Drácula, acompanhamos a terrível história do navio Deméter, que foi fretado para transportar cargas particulares. Estranhos eventos acontecem à tripulação, que tenta sobreviver à viagem oceânica, perseguidos todas as noites por uma presença impiedosa a bordo do navio. Quando o Deméter finalmente chega à costa, é apenas um navio carbonizado e abandonado. Não há vestígios da tripulação. A trama se baseia em um único capítulo do livro clássico de Bram Stoker.</p>
+                                    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.2001702e-da42-4d81-a754-fa800689aa09?autoplay=0&ref_=atv_cf_strg_wb" class="btn btn-outline-danger link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Assista</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        
+                            <div class="card bg-secondary text-center">
+                                <div class="card-header"></div>
+                                <img src="https://i.ebayimg.com/images/g/IdAAAOSwIuBhIPIY/s-l1200.webp" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title"> <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.adorocinema.com/filmes/filme-27765/"> O Exorcista</a></h4>
+                                    <p>Em Georgetown, Washington, uma atriz vai gradativamente tomando consciência que a sua filha de doze anos está tendo um comportamento completamente assustador. Deste modo, ela pede ajuda a um padre, que também um psiquiatra, e este chega a conclusão de que a garota está possuída pelo demônio. Ele solicita então a ajuda de um segundo sacerdote, especialista em exorcismo, para tentar livrar a menina desta terrível possessão.</p>
+                                    <a href="https://www.hbomax.com/br/pt/feature/urn:hbo:feature:GYWmdygVheMM_LQEAAAAe" class="btn btn-outline-danger link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Assista</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        Desenvolvido por &copy; Flavio Ferraz - 2023
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

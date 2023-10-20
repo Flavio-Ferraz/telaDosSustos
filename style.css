@@ -1,0 +1,70 @@
+
+
+.fixed-height-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: #474E68;
+    color: black;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1000; /* Valor do z-index maior que o valor padrão para garantir que ao rolar a página, as imagens passem por baixo do header */
+}
+
+.nav-link{
+    text-align: center;
+}
+
+.nav-link:hover{
+    background-color: grey;
+}
+
+section{
+    height: 100%;
+}
+
+section h2{
+    color: #fff;
+}
+
+
+
+.carousel-item a {
+    color: #fff;
+}
+
+#cinemas h2{
+    text-align: center;
+    padding-top: 67px;
+}
+
+#streaming h2{
+    text-align: center;
+    padding-top: 67px;
+}
+
+#cinemas{
+    color: #fff;
+}
+
+#streaming{
+    color: #fff;
+    padding-top: 28px;
+}
+
+.row {
+    --bs-gutter-y: 0.5rem; /*Olhando no devtools, vi que modificando este atributo eu consegui colocar um pequeno espaço no topo dos cards quando abro a página em telas pequenas.*/
+}
+
+footer{
+    background-color: #474E68;
+    color: #fff;
+    text-align: center;
+}
+
